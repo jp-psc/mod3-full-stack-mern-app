@@ -21,7 +21,7 @@ function New({ user }) {
 
     return ( 
         <div>
-            <h1>New Post</h1>
+            <h1>New Entry</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="nme">Subject:</label><br />
                 <input type="text" id="nme" ref={subjectRef} /><br /><br />

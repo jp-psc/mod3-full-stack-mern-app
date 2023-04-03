@@ -16,7 +16,7 @@ function Index({ user }) {
     console.log(posts)
     return (
             <div>
-                <h1>Index View</h1>
+                <h1>Tasks</h1>
                 <div id="posts">
 
                         {posts?.map((post, index) => 
