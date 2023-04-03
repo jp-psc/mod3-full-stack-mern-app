@@ -29,7 +29,7 @@ function Index({ user }) {
             
                     {user && 
                         <Link to="/posts/new">
-                            <button>NEW POST</button>
+                            <button>NEW ENTRY</button>
                         </Link>
                     }
     

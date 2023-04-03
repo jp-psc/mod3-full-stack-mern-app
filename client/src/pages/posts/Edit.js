@@ -28,7 +28,7 @@ function Edit() {
 
     return ( 
         <div>
-            <h1>Edit Post</h1>
+            <h1>Edit Entry</h1>
             <div className='buttons' style={{ flexDirection: 'column' }}>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="nme">Subject:</label><br />

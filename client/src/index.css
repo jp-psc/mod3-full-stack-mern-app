@@ -1,8 +1,7 @@
 ul {
   position: relative;
-  border: 1px solid black;
   list-style: none;
-  padding: 20px;
+
 }
 li {
   display: flex;
