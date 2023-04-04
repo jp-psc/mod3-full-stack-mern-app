@@ -51,8 +51,8 @@ function Navbar({ user, setUser }) {
             ) : (
               <>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/posts">
-                    Posts
+                  <Link className="nav-link" to="/register">
+                    Register
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -60,11 +60,13 @@ function Navbar({ user, setUser }) {
                     Login
                   </Link>
                 </li>
+
                 <li className="nav-item">
-                  <Link className="nav-link" to="/register">
-                    Register
+                  <Link className="nav-link" to="/posts">
+                    Tasks
                   </Link>
                 </li>
+
               </>
             )}
           </ul>
