@@ -22,15 +22,18 @@ function New({ user }) {
     return ( 
         <div>
             <h1>New Entry</h1>
+            <br/>
+            <img src="https://s3-us-east-2.amazonaws.com/static.showingtime.com/wp-content/uploads/2018/06/TaskList-795x675.jpg" alt="checklist" width="200" height="200"></img>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="nme">Date:</label><br />
+                <label htmlFor="nme">Task:</label><br />
                 <input type="text" id="nme" ref={subjectRef} /><br /><br />
 
                 <label htmlFor="clr">Things to do:</label><br />
                 <textarea id="clr" cols="50" rows="30" ref={bodyRef} /><br /><br />
 
-                <button>Submit</button>
+                <button type="button" class="btn btn-success">Add</button>
             </form>
+            
         </div>
      );
 }

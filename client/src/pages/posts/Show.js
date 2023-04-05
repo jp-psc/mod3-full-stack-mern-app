@@ -78,7 +78,7 @@ function Show({ user }) {
                     }
                     {user && 
                         <details ref={detailsRef}>
-                            <summary style={{ opacity: '.5' }}>Feedback:</summary>
+                            <summary style={{ opacity: '.5' }}>Additional info:</summary>
                             <form onSubmit={handleSubmit}>
                                 <textarea ref={bodyRef} id="lc" cols="1" rows="1" />
                                 <button>Comment</button>

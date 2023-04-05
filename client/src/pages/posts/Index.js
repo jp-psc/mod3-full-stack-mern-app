@@ -32,11 +32,12 @@ function Index({ user }) {
             
                     {user && 
                         <Link to="/posts/new">
-                            <button>NEW ENTRY</button>
+                            <button type="button" class="btn btn-primary">New Entry</button>
                         </Link>
                     }
     
                 </div>
+                <img src="https://i.postimg.cc/rsYmfybH/ppltodo.webp" alt="pplworking" /> 
             </div>
     )
 }

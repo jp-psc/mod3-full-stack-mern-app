@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken')
 
 const Post = require('../models/postModel')
-const Comment = require('../models/commentModel')
+const Task = require('../models/commentModel')
 
 async function authorize(req, res, next) {
 
@@ -44,7 +44,7 @@ async function confirmUserAccess(req, res, next) {
         if (req.baseUrl.includes('post')) { 
             document = await Post.findOne({ _id: req.params.id, user: req.user })
         } else {
-            document = await Comment.findOne({ _id: req.params.id, user: req.user })
+            document = await Task.findOne({ _id: req.params.id, user: req.user })
         }
         if (!document) {
             throw new Error('User did not create this document')

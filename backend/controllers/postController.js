@@ -1,5 +1,5 @@
 const Posts = require('../models/postModel')
-const Comments = require('../models/commentModel')
+const Tasks = require('../models/commentModel')
 
 const posts = require('../models/posts')
 
@@ -23,7 +23,7 @@ module.exports.delete = async (req, res) => {
         // first find the post, store it in a variable, then delete it from database
         const post = await Posts.findByIdAndDelete(req.params.id)
         // delete all comments where the comment id 
-        await Comments.deleteMany({ _id: { 
+        await Tasks.deleteMany({ _id: { 
             // equals/matches any comment ids in this array
             $in: post.comments 
         }})

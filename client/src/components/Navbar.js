@@ -8,7 +8,7 @@ function Navbar({ user, setUser }) {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
       <div className="container-fluid">
         {/* <Link className="navbar-brand" to="/">
           Home
@@ -34,6 +34,11 @@ function Navbar({ user, setUser }) {
                     Home
                   </Link>
                 </li>
+
+                <b>
+              <li style={{ color: 'yellow', fontSize: '18px' }}>Welcome {user}!</li>
+             </b>
+
                 <li className="nav-item">
                   <Link className="nav-link" to="/posts">
                     <span style={{ color: 'white', fontSize: '18px' }}>Tasks</span>
@@ -45,9 +50,7 @@ function Navbar({ user, setUser }) {
                     <span style={{ color: 'white', fontSize: '18px' }}>Logout</span>
                   </Link>
                 </li>
-                <><b>
-              <li style={{ color: 'yellow', fontSize: '18px' }}>Welcome {user}!</li>
-             </b></>
+                
               </>
               
             ) : (
