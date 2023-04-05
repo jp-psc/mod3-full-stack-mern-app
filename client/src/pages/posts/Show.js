@@ -55,6 +55,7 @@ function Show({ user }) {
                     <h2>{post.subject}</h2>
                     <h5 style={{ opacity: '.3'}}>Posted by {post.user} on {new Date(post.createdAt).toLocaleDateString()} at {new Date(post.createdAt).toLocaleTimeString()}</h5>
                     <div className='p-body'>{post.body}</div><br /><br />
+                    <img src="https://tasktracker.in/dist/img/feature/task.png" alt="" />
 
                     {
                         post.comments?.length ?
@@ -89,14 +90,14 @@ function Show({ user }) {
                     <div className="buttons">
                         {post.user === user &&
                             <>
-                                <button onClick={handleDeletePost}>Delete</button>
+                                <button onClick={handleDeletePost} class="btn btn-danger">Delete</button>
                                 <Link to={`/posts/${post._id}/edit`}>
-                                    <button>Edit</button>
+                                    <button class="btn btn-warning">Edit</button>
                                 </Link>
                             </>
                         }
                         <Link to='/posts'>
-                            <button>Back</button>
+                            <button class="btn btn-info">Back</button>
                         </Link>
                     </div>
                 </div>
