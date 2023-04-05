@@ -40,6 +40,7 @@ function Register({ setUser }) {
 
     return ( 
         <div className="user-auth">
+            <img src="https://www.freeiconspng.com/uploads/tasks-icon-30.png" width="300" height="300" alt="" />
             <h1>Register</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="username">Username:</label>
@@ -51,7 +52,7 @@ function Register({ setUser }) {
                     onChange={handleChange}
                     value={form.username}
                 />
-                <br /><br />
+                <br />
                 <label htmlFor="email">Email:</label>
                 <br />
                 <input 
@@ -61,7 +62,7 @@ function Register({ setUser }) {
                     onChange={handleChange}
                     value={form.email}
                 />
-                <br /><br />
+                <br />
                 <label htmlFor="password">Password:</label>
                 <br />
                 <input 
@@ -71,8 +72,8 @@ function Register({ setUser }) {
                     onChange={handleChange}
                     value={form.password}
                 />
-                <br /><br />
-                <button>Submit</button>
+                <br />
+                <button class="btn btn-primary">Submit</button>
             </form>
         </div>
      );

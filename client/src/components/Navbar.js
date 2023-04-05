@@ -8,7 +8,7 @@ function Navbar({ user, setUser }) {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container-fluid">
         {/* <Link className="navbar-brand" to="/">
           Home
@@ -28,16 +28,20 @@ function Navbar({ user, setUser }) {
           <ul className="navbar-nav">
             {user ? (
               <>
+                <a class="navbar-brand"><img src="https://i.etsystatic.com/30613348/r/il/5c3323/3249282655/il_1140xN.3249282655_tb0y.jpg" alt="Logo" width="50" height="45" class="d-inline-block align-text-top" />                 </a>
                 
                 <li className="nav-item">
                   <Link className="nav-link" to="/">
-                    Home
+                  <span style={{ color: 'white', fontSize: '18px' }}>Home</span>
                   </Link>
                 </li>
 
-                <b>
-              <li style={{ color: 'yellow', fontSize: '18px' }}>Welcome {user}!</li>
-             </b>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/about">
+                    <span style={{ color: 'white', fontSize: '18px' }}>About</span>
+                  </Link>
+                </li>
+
 
                 <li className="nav-item">
                   <Link className="nav-link" to="/posts">
@@ -51,6 +55,9 @@ function Navbar({ user, setUser }) {
                   </Link>
                 </li>
                 
+                <b>
+              <li className="nav-link" style={{ color: 'yellow', fontSize: '18px' }}>Welcome {user}!</li>
+             </b>
               </>
               
             ) : (

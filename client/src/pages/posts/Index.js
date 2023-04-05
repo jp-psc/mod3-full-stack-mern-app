@@ -37,7 +37,7 @@ function Index({ user }) {
                     }
     
                 </div>
-                <img src="https://i.postimg.cc/rsYmfybH/ppltodo.webp" alt="pplworking" /> 
+                <img src="https://i.postimg.cc/rsYmfybH/ppltodo.webp" alt="pplworking" class="center" /> 
             </div>
     )
 }
