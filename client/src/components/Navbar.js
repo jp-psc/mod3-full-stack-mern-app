@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 function Navbar({ user, setUser }) {
-  
+
   const logout = () => {
     localStorage.removeItem("token")
     setUser({})
@@ -35,16 +35,16 @@ function Navbar({ user, setUser }) {
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/posts">
-                    Posts
+                    <span style={{ color: 'white', fontSize: '18px' }}>Tasks</span>
                   </Link>
                 </li>
                 <b>
-                  <li style={{ color: 'Red' }}>Welcome {user}!</li>
+                  <li style={{ color: 'red', fontSize: '18px' }}>Welcome {user}!</li>
                 </b>
 
                 <li onClick={logout}>
                   <Link className="nav-link" to="/login">
-                    Logout
+                    <span style={{ color: 'white', fontSize: '18px' }}>Logout</span>
                   </Link>
                 </li>
               </>
@@ -52,18 +52,18 @@ function Navbar({ user, setUser }) {
               <>
                 <li className="nav-item">
                   <Link className="nav-link" to="/register">
-                    Register
+                    <span style={{ color: 'white', fontSize: '18px' }}>Register</span>
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/login">
-                    Login
+                    <span style={{ color: 'white', fontSize: '18px' }}>Login</span>
                   </Link>
                 </li>
 
                 <li className="nav-item">
                   <Link className="nav-link" to="/posts">
-                    Tasks
+                    <span style={{ color: 'white', fontSize: '18px' }}>Tasks</span>
                   </Link>
                 </li>
 
