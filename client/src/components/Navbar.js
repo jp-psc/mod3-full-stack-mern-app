@@ -28,6 +28,7 @@ function Navbar({ user, setUser }) {
           <ul className="navbar-nav">
             {user ? (
               <>
+                
                 <li className="nav-item">
                   <Link className="nav-link" to="/">
                     Home
@@ -38,16 +39,17 @@ function Navbar({ user, setUser }) {
                     <span style={{ color: 'white', fontSize: '18px' }}>Tasks</span>
                   </Link>
                 </li>
-                <b>
-                  <li style={{ color: 'red', fontSize: '18px' }}>Welcome {user}!</li>
-                </b>
 
                 <li onClick={logout}>
                   <Link className="nav-link" to="/login">
                     <span style={{ color: 'white', fontSize: '18px' }}>Logout</span>
                   </Link>
                 </li>
+                <><b>
+              <li style={{ color: 'yellow', fontSize: '18px' }}>Welcome {user}!</li>
+             </b></>
               </>
+              
             ) : (
               <>
                 <li className="nav-item">

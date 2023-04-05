@@ -27,7 +27,7 @@ function New({ user }) {
                 <input type="text" id="nme" ref={subjectRef} /><br /><br />
 
                 <label htmlFor="clr">Things to do:</label><br />
-                <textarea id="clr" cols="50" rows="20" ref={bodyRef} /><br /><br />
+                <textarea id="clr" cols="50" rows="30" ref={bodyRef} /><br /><br />
 
                 <button>Submit</button>
             </form>
