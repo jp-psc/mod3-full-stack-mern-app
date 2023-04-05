@@ -5,10 +5,10 @@ import { userInfo } from './services/userService';
 
 import './index.css';
 
-import EditPost from './pages/posts/Edit';
-import IndexPost from './pages/posts/Index';
-import NewPost from './pages/posts/New';
-import ShowPost from './pages/posts/Show';
+import EditPost from './pages/tasks/Edit';
+import IndexPost from './pages/tasks/Index';
+import NewPost from './pages/tasks/New';
+import ShowPost from './pages/tasks/Show';
 import EditComment from './pages/comments/Edit';
 
 import Register from './pages/users/Register';
