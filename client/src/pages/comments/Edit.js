@@ -35,10 +35,10 @@ function Edit() {
                     <label htmlFor="clr">Body:</label><br />
                     <textarea ref={bodyRef} id="clr" cols="30" rows="10" defaultValue={comment.body} /><br /><br />
 
-                    <button>Submit</button>
+                    <button class="btn btn-success">Submit</button>
                 </form>
                 <Link to={`/posts/${params.id}`}>
-                    <button>Back</button>
+                    <button class="btn btn-info">Back</button>
                 </Link>
             </div>
         </div>

@@ -15,6 +15,8 @@ import Register from './pages/users/Register';
 import Login from './pages/users/Login';
 
 import Navbar from './components/Navbar';
+import About from './pages/About';
+import Home from './pages/Home';
 
 function App() {
 
@@ -45,6 +47,10 @@ function App() {
     <div className="App">
       <Navbar user={loggedIn} setUser={setUser} />
       <Routes>
+
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/posts' element={<IndexPost user={loggedIn} />} />
           <Route path='/posts' element={<IndexPost user={loggedIn} />} />
           <Route path='/posts/:id' element={<ShowPost user={loggedIn} />} />
           {loggedIn ?
