@@ -33,5 +33,5 @@ Although the application was deployed through render.com, there is a timeout tha
 
 Future Enhancements:
 
-I plan to incorporate a cleaner interface and better integrations of pictures.
+I plan to incorporate a cleaner interface and better integrations of pictures. I will add a checkoff/strikethrough option to indicate a task has been completed without having to delete the finished task itself. Add a button to directly delete task from the list.
 
