@@ -67,7 +67,7 @@ function Show({ user }) {
                                     <div>{comment.body}</div>
                                     {comment.user === user &&
                                         <>
-                                            <button onClick={() => handleDeleteComment(comment)}>X</button>
+                                            <button onClick={() => handleDeleteComment(comment)}>x</button>
                                             <Link to={`/posts/${post._id}/comments/${comment._id}`}><span>+</span></Link>
                                         </>
                                     }
