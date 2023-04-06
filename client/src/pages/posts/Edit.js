@@ -37,10 +37,10 @@ function Edit() {
                     <label htmlFor="clr">Things to do:</label><br />
                     <textarea ref={bodyRef} id="clr" cols="30" rows="10" defaultValue={post.body} /><br /><br />
 
-                    <button>Update</button>
+                    <button class="btn btn-secondary">Update</button>
                 </form>
                 <Link to={`/posts/${post._id}`}>
-                    <button>Back</button>
+                    <button class="btn btn-info">Back</button>
                 </Link>
                 
             </div>

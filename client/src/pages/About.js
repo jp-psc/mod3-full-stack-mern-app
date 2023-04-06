@@ -11,9 +11,10 @@ export default function About() {
             Don't overcomplicate things and simply submit entries fitting to your life's goals.
            </p>
            <ol>
-            <li>
-                
-            </li>
+            <li>1. Register with an username, email and password.</li>
+            <li>2. Click on New Entry and add a new task with details.</li>
+            <li>3. Add additional details as needed and feel free to edit as you go!</li>
+            <li>4. Get back in control of your life!</li>
            </ol>
         </div>
     )
